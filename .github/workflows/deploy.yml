@@ -39,6 +39,8 @@ jobs:
         working-directory: ./terraform
         id: terraform
         run: terraform apply -auto-approve
+      - name: refresh Terraform statefile
+        run: terraform refresh
       - name: List Terraform Outputs
         run: terraform output
       # Step 6: Save ECR repository URL and ECS details
