@@ -3,9 +3,9 @@ output "ecr_repository_url" {
 }
 
 output "ecs_cluster_name" {
-  value = aws_ecs_cluster.app_cluster.name
+  value = module.ecs.app_cluster.name
 }
 
 output "ecs_service_name" {
-  value = aws_ecs_service.app_service.name
+  value = module.ecs.app_service.name
 }
