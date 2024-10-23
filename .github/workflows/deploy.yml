@@ -3,7 +3,7 @@ name: Terraform and Deploy to ECS
 on:
   push:
     branches:
-    - main
+    - master
 
 jobs:
   provision-infrastructure:
